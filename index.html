@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>چالش پیام‌آوران – هدیه‌های آسمانی ششم</title>
+<style>
+:root{--bg:#0b1020;--bg2:#141b34;--card:#1a2342;--tx:#eef2ff;--mut:#8f9bc4;--ac:#00e5c3;--ac2:#4f8cff;--ok:#2ee66b;--bad:#ff4d6a;--gold:#ffc83d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(circle at 80% 0,#1d2d6b 0,transparent 45%),radial-gradient(circle at 0 100%,#0c4a52 0,transparent 40%),var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,"Segoe UI",sans-serif;min-height:100vh}
+.wrap{max-width:760px;margin:0 auto;padding:18px}
+.screen{display:none;animation:in .35s}.screen.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.card{background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid #ffffff1f;border-radius:20px;padding:22px;box-shadow:0 10px 40px #0008}
+h1{font-size:clamp(28px,7vw,46px);margin:6px 0;background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.3}
+.sub{color:var(--mut);margin:0 0 20px}
+.tag{display:inline-block;border:1px solid var(--ac);color:var(--ac);border-radius:99px;padding:3px 12px;font-size:13px;letter-spacing:1px}
+input[type=text]{width:100%;padding:15px;border-radius:14px;border:2px solid #ffffff2a;background:#0b1020;color:var(--tx);font:inherit;font-size:20px;text-align:center;outline:0}
+input[type=text]:focus{border-color:var(--ac)}
+.teacher{margin:12px 0 22px;color:var(--gold);text-align:center;font-size:17px}
+.btn{display:block;width:100%;padding:15px;border:0;border-radius:14px;background:linear-gradient(90deg,var(--ac),var(--ac2));color:#041018;font:inherit;font-weight:800;font-size:19px;cursor:pointer;transition:.15s}
+.btn:active{transform:scale(.97)}.btn:disabled{opacity:.35}
+.hud{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-bottom:12px;font-size:15px}
+.pill{background:#ffffff12;border-radius:99px;padding:6px 14px;white-space:nowrap}
+.bar{height:8px;background:#ffffff18;border-radius:9px;overflow:hidden;margin-bottom:16px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));transition:width .4s}
+.tbar i{background:linear-gradient(90deg,var(--gold),var(--bad));transition:width 1s linear}
+.q{font-size:clamp(20px,5vw,27px);line-height:1.8;margin:8px 0 20px;font-weight:700}
+.opts{display:grid;gap:11px}
+.opt{padding:15px 16px;border-radius:14px;border:2px solid #ffffff26;background:#ffffff0a;color:var(--tx);font:inherit;font-size:19px;text-align:right;cursor:pointer;transition:.15s}
+.opt:hover{border-color:var(--ac)}
+.opt.ok{background:#2ee66b30;border-color:var(--ok);animation:pop .4s}
+.opt.bad{background:#ff4d6a30;border-color:var(--bad);animation:shake .4s}
+@keyframes pop{50%{transform:scale(1.04)}}
+@keyframes shake{25%{transform:translateX(8px)}75%{transform:translateX(-8px)}}
+.fb{min-height:30px;margin:14px 0 8px;font-weight:700;font-size:18px}
+.big{font-size:56px;font-weight:900;color:var(--gold);text-align:center;margin:4px 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.grid3 div{background:#ffffff10;border-radius:14px;padding:12px;text-align:center}
+.grid3 b{display:block;font-size:24px;color:var(--ac)}.grid3 span{font-size:13px;color:var(--mut)}
+.tblw{overflow-x:auto;margin:14px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{padding:8px;border-bottom:1px solid #ffffff18;text-align:right}
+.flash{position:fixed;inset:0;pointer-events:none;opacity:0}
+.flash.g{animation:fl .5s;background:radial-gradient(circle,#2ee66b55,transparent 70%)}
+.flash.r{animation:fl .5s;background:radial-gradient(circle,#ff4d6a55,transparent 70%)}
+@keyframes fl{0%{opacity:1}100%{opacity:0}}
+.floor{position:fixed;left:-50%;right:-50%;bottom:0;height:55vh;background:linear-gradient(#00e5c333 1px,transparent 1px) 0 0/100% 48px,linear-gradient(90deg,#ff2bd633 1px,transparent 1px) 0 0/60px 100%;transform:perspective(420px) rotateX(62deg);transform-origin:bottom;animation:mv 3s linear infinite;mask-image:linear-gradient(transparent,#000 70%);-webkit-mask-image:linear-gradient(transparent,#000 70%);z-index:0;pointer-events:none}
+@keyframes mv{to{background-position:0 48px,0 0}}
+.cubes{position:fixed;inset:0;perspective:700px;pointer-events:none;z-index:0}
+.cubes i{position:absolute;width:70px;height:70px;border:2px solid var(--ac);box-shadow:0 0 18px var(--ac),inset 0 0 18px var(--ac);animation:sp 9s linear infinite;opacity:.55}
+.cubes i:nth-child(1){top:8%;left:6%}.cubes i:nth-child(2){top:18%;right:7%;border-color:#ff2bd6;box-shadow:0 0 18px #ff2bd6,inset 0 0 18px #ff2bd6;animation-duration:12s}.cubes i:nth-child(3){top:55%;left:3%;width:44px;height:44px;border-color:#ffc83d;box-shadow:0 0 18px #ffc83d,inset 0 0 18px #ffc83d;animation-duration:7s}.cubes i:nth-child(4){top:62%;right:5%;width:56px;height:56px;animation-duration:10s;border-color:#4f8cff;box-shadow:0 0 18px #4f8cff,inset 0 0 18px #4f8cff}.cubes i:nth-child(5){top:36%;left:48%;width:30px;height:30px;border-color:#ff2bd6;box-shadow:0 0 14px #ff2bd6;animation-duration:8s}
+@keyframes sp{from{transform:rotateX(0) rotateY(0) rotateZ(0)}to{transform:rotateX(360deg) rotateY(360deg) rotateZ(180deg)}}
+.wrap{position:relative;z-index:1;perspective:1100px}
+body{background:radial-gradient(circle at 80% 0,#3a1a7a 0,transparent 45%),radial-gradient(circle at 0 100%,#0a4f6b 0,transparent 42%),#070a18;overflow-x:hidden}
+.card{transform-style:preserve-3d;transform:rotateX(var(--rx,2deg)) rotateY(var(--ry,0deg));transition:transform .15s;border:1px solid #00e5c3aa;background:linear-gradient(160deg,#141c3de6,#0b1026ee);box-shadow:0 0 0 1px #ff2bd622,0 0 30px #00e5c355,0 0 80px #7a2bff33,0 30px 50px #000a,inset 0 0 40px #00e5c314}
+h1{filter:drop-shadow(0 0 14px #00e5c3cc) drop-shadow(0 0 30px #4f8cff88);background:linear-gradient(90deg,#00ffd5,#4f8cff,#ff2bd6);-webkit-background-clip:text;background-clip:text}
+.tag{box-shadow:0 0 12px #00e5c366,inset 0 0 10px #00e5c333;text-shadow:0 0 8px var(--ac)}
+.pill{border:1px solid #00e5c366;box-shadow:0 0 10px #00e5c333;background:#0b1026}
+.big{text-shadow:0 0 12px #ffc83d,0 0 35px #ff9d00,0 4px 0 #8a5a00}
+input[type=text]{box-shadow:inset 0 0 14px #00e5c322;border-color:#00e5c377}
+input[type=text]:focus{box-shadow:0 0 20px #00e5c3aa,inset 0 0 14px #00e5c333}
+.btn{background:linear-gradient(180deg,#27ffe0,#18b9d6);box-shadow:0 7px 0 #0a7388,0 12px 22px #000a,0 0 28px #00e5c388;transition:.12s}
+.btn:hover{filter:brightness(1.1)}.btn:active{transform:translateY(6px);box-shadow:0 1px 0 #0a7388,0 0 18px #00e5c3aa}
+.opt{background:linear-gradient(180deg,#1b2552,#10173a);border:2px solid #4f8cff88;box-shadow:0 6px 0 #060a1f,0 10px 16px #0009,0 0 12px #4f8cff33;text-shadow:0 0 6px #4f8cff66}
+.opt:hover{transform:translateY(-3px);border-color:#00ffd5;box-shadow:0 9px 0 #060a1f,0 0 24px #00ffd5aa}
+.opt:active{transform:translateY(5px);box-shadow:0 1px 0 #060a1f}
+.opt.ok{border-color:#2ee66b;background:#12402a;box-shadow:0 6px 0 #0a2a1a,0 0 30px #2ee66bcc}
+.opt.bad{border-color:#ff2b5e;background:#45121f;box-shadow:0 6px 0 #2a0a12,0 0 30px #ff2b5ecc}
+.bar{box-shadow:0 0 10px #00e5c344}.bar i{box-shadow:0 0 12px var(--ac)}
+.grid3 div{background:#0b1026;border:1px solid #00e5c344;box-shadow:0 5px 0 #060a1f,0 0 14px #00e5c333;transform:translateZ(20px)}
+.grid3 b{text-shadow:0 0 12px var(--ac)}
+.teacher{text-shadow:0 0 10px #ffc83d88}
+#s1 .card{transform:none!important;transform-style:flat}
+.btn,.opt{touch-action:manipulation}
+#sub{position:relative;z-index:5}
+</style>
+</head>
+<body>
+<div class="flash" id="fl"></div>
+<div class="floor"></div>
+<div class="cubes"><i></i><i></i><i></i><i></i><i></i></div>
+<div class="wrap">
+
+<div class="screen on" id="s0"><div class="card">
+<span class="tag">MISSION • هدیه‌های آسمانی ششم</span>
+<h1>چالش پیام‌آوران</h1>
+<p class="sub">درس ۱ یکتایی و درس ۲ بهترین راهنمایان — سریع و دقیق جواب بده تا امتیاز بگیری!</p>
+<input type="text" id="nm" placeholder="نام دانش‌آموز را بنویس" autocomplete="off">
+<div class="teacher">آموزگار: مرضیه ارمغانی</div>
+<button class="btn" id="go" disabled>شروع ماموریت</button>
+</div></div>
+
+<div class="screen" id="s1"><div class="card">
+<div class="hud"><span class="pill" id="hq"></span><span class="pill">⭐ <span id="hs">0</span></span><span class="pill">🔥 <span id="hst">0</span></span><span class="pill">⏱ <span id="ht">0</span></span></div>
+<div class="bar"><i id="pb"></i></div>
+<div class="bar tbar"><i id="tb" style="width:100%"></i></div>
+<div class="q" id="qt"></div>
+<div class="opts" id="ops"></div>
+<div id="typed" style="display:none">
+<input type="text" id="ans" placeholder="جواب کوتاه (یک یا چند کلمه)" autocomplete="off">
+<button class="btn" id="sub" style="margin-top:10px">ثبت پاسخ</button>
+</div>
+<div class="fb" id="fb"></div>
+<button class="btn" id="nx" style="display:none">سؤال بعد ◀</button>
+</div></div>
+
+<div class="screen" id="s2"><div class="card">
+<span class="tag" id="rk"></span>
+<div class="sub" id="who" style="margin-top:10px"></div>
+<div class="big" id="fs"></div>
+<div class="grid3">
+<div><b id="rc"></b><span>پاسخ درست</span></div>
+<div><b id="tt"></b><span>زمان کل</span></div>
+<div><b id="av"></b><span>میانگین هر سؤال</span></div>
+</div>
+<div class="tblw"><table id="tbl"></table></div>
+<div class="teacher">آموزگار: مرضیه ارمغانی</div>
+<button class="btn" id="again">بازی دوباره</button>
+</div></div>
+
+</div>
+<script>
+// نوع m = چهارگزینه‌ای ، t = پاسخ کوتاه نوشتاری
+const Q=[
+{k:'m',q:'اصول دینی مسلمانان بر چند پایه استوار است؟',o:['۳ پایه','۴ پایه','۵ پایه','۶ پایه'],a:2},
+{k:'m',q:'اولین اصل دینی و اعتقادی مسلمانان کدام است؟',o:['توحید','نبوت','امامت','معاد'],a:0},
+{k:'m',q:'توحید یعنی چه؟',o:['خداوند یکتاست و جز او خدایی نیست','پیامبران راهنمای ما هستند','پس از مرگ زنده می‌شویم','خدا عادل است'],a:0},
+{k:'m',q:'مسلمانان هر روز در اذان و نماز به چه چیزی شهادت می‌دهند؟',o:['به یکتایی و یگانگی پروردگار','به نیکی مردم','به بزرگی شهرها','به قدرت پادشاهان'],a:0},
+{k:'t',q:'نام سوره‌ای که با «قُلْ هُوَ اللهُ اَحَد» شروع می‌شود چیست؟ (یک کلمه)',a:['توحید','اخلاص']},
+{k:'m',q:'کدام صفت خدا در سوره‌ی توحید آمده است؟',o:['بی‌همتایی','بخشندگی','توانایی','مهربانی'],a:0},
+{k:'t',q:'تکمیل کن: خداوند ........... است. (یعنی به هیچ‌کس و هیچ‌چیز محتاج نیست)',a:['بی‌نیاز','بینیاز']},
+{k:'m',q:'بهترین راهنمایان ما در زندگی چه کسانی هستند؟',o:['پیامبران و امامان','دوستان','ثروتمندان','هیچ‌کدام'],a:0},
+{k:'m',q:'پیامبر کیست؟',o:['کسی که از سوی خدا انتخاب شده و پیام او را به مردم می‌رساند','کسی که فقط برای خود زندگی می‌کند','پادشاه یک سرزمین','دانشمند بزرگ'],a:0},
+{k:'m',q:'کتاب آسمانی «انجیل» مربوط به کدام پیامبر است؟',o:['حضرت موسی (ع)','حضرت عیسی (ع)','حضرت محمد (ص)','حضرت نوح (ع)'],a:1},
+{k:'t',q:'کتاب آسمانی «تورات» مربوط به حضرت ........... است. (نام پیامبر)',a:['موسی']},
+{k:'t',q:'پیامبران برای ثابت کردن پیامبری خود از چه چیزی استفاده می‌کردند؟ (یک کلمه)',a:['معجزه']},
+{k:'t',q:'اولین پیامبر خدا چه کسی بود؟ (نام پیامبر)',a:['آدم']},
+{k:'t',q:'آخرین پیامبر خدا کیست؟ (نام پیامبر)',a:['محمد','حضرتمحمد']},
+{k:'m',q:'کدام‌یک از پیامبران اولوالعزم نیست؟',o:['حضرت نوح (ع)','حضرت ابراهیم (ع)','حضرت یوسف (ع)','حضرت موسی (ع)'],a:2},
+{k:'m',q:'نبوت (پیامبری) یعنی چه؟',o:['خدا پیامبرانی را از میان انسان‌های خوب برگزیند تا مردم را هدایت کنند','مردم رهبر انتخاب کنند','فرشتگان بر زمین بیایند','کتاب‌ها نوشته شوند'],a:0},
+{k:'t',q:'طبق آیه‌ی «لقد ارسلنا رسلنا بالبینات»، خدا همراه پیامبران چه چیزی نازل کرد؟ (کتاب ...)',a:['کتاب','کتابآسمانی']},
+{k:'m',q:'آیه‌ی «فارسلنا فیهم رسولاً منهم ان اعبدوا الله» به چه مطلبی اشاره دارد؟',o:['دعوت مردم به خداپرستی توسط پیامبران','انتخاب پیامبر از میان فرشتگان','ساختن مسجد','جنگ با دشمن'],a:0}
+];
+const $=id=>document.getElementById(id);
+const fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+const LIM=25;
+let list,i,score,streak,right,log,t0,tTick,tl,locked,startAll,name;
+const AC=window.AudioContext||window.webkitAudioContext;let ac;
+function beep(f,d,ty){try{ac=ac||new AC();const o=ac.createOscillator(),g=ac.createGain();o.type=ty||'sine';o.frequency.value=f;g.gain.value=.12;o.connect(g);g.connect(ac.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+d);o.stop(ac.currentTime+d)}catch(e){}}
+const sOk=()=>{beep(660,.15);setTimeout(()=>beep(880,.2),120)};
+const sBad=()=>beep(160,.35,'sawtooth');
+function flash(c){const f=$('fl');f.className='flash';void f.offsetWidth;f.className='flash '+c}
+function show(n){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));$('s'+n).classList.add('on');window.scrollTo(0,0)}
+function norm(s){return s.replace(/\(ص\)|\(ع\)|\(س\)/g,'').replace(/[ي]/g,'ی').replace(/[ك]/g,'ک').replace(/[\u200c\u200f\s\u064B-\u0652ـ().،,؟?!]/g,'').replace(/\(ص\)|\(ع\)/g,'').replace(/^حضرت/,'').replace(/^ابی/,'ابی').replace(/^ی$/,'ی')}
+function shuffle(a){for(let j=a.length-1;j>0;j--){const k=Math.random()*(j+1)|0;[a[j],a[k]]=[a[k],a[j]]}return a}
+const fmt=s=>{s=Math.round(s);return fa(Math.floor(s/60))+':'+fa(String(s%60).padStart(2,'0'))};
+
+$('nm').oninput=()=>$('go').disabled=!$('nm').value.trim();
+$('go').onclick=()=>{name=$('nm').value.trim();ac=ac||new AC();start()};
+$('again').onclick=()=>{show(0)};
+$('nm').onkeydown=e=>{if(e.key==='Enter'&&!$('go').disabled)$('go').click()};
+$('ans').onkeydown=e=>{if(e.key==='Enter')$('sub').click()};
+$('sub').addEventListener('pointerdown',e=>{e.preventDefault();$('sub').click()});
+
+function start(){list=shuffle(Q.slice()).slice(0,15);i=0;score=0;streak=0;right=0;log=[];startAll=Date.now();show(1);ask()}
+function ask(){
+ const q=list[i];locked=false;
+ $('hq').textContent='سؤال '+fa(i+1)+' از '+fa(list.length);
+ $('hs').textContent=fa(score);$('hst').textContent=fa(streak);
+ $('pb').style.width=(i/list.length*100)+'%';
+ $('qt').textContent=q.q;$('fb').textContent='';$('nx').style.display='none';
+ const ops=$('ops');ops.innerHTML='';
+ if(q.k==='m'){
+  $('typed').style.display='none';ops.style.display='grid';
+  shuffle(q.o.map((t,j)=>({t,c:j===q.a}))).forEach(x=>{const b=document.createElement('button');b.className='opt';b.textContent=x.t;b.onclick=()=>pick(b,x.c,x.t);ops.appendChild(b)});
+ }else{ops.style.display='none';$('typed').style.display='block';$('ans').value='';$('ans').disabled=false;$('sub').disabled=false;setTimeout(()=>$('ans').focus(),100)}
+ t0=Date.now();tl=LIM;$('ht').textContent=fa(tl);$('tb').style.transition='none';$('tb').style.width='100%';
+ setTimeout(()=>{$('tb').style.transition='width '+LIM+'s linear';$('tb').style.width='0'},30);
+ clearInterval(tTick);tTick=setInterval(()=>{tl--;$('ht').textContent=fa(Math.max(tl,0));if(tl<=0)finish(false,'—')},1000);
+}
+function pick(btn,c,t){if(locked)return;
+ document.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+ const q=list[i];
+ if(!c){document.querySelectorAll('.opt').forEach(b=>{if(b.textContent===q.o[q.a])b.classList.add('ok')})}
+ btn.classList.add(c?'ok':'bad');finish(c,t)}
+$('sub').onclick=()=>{if(locked)return;const v=norm($('ans').value);if(!v){$('fb').style.color='var(--gold)';$('fb').textContent='اول جواب را بنویس 🙂';$('ans').focus();return}
+ const c=list[i].a.some(x=>norm(x)===v);$('ans').disabled=true;$('sub').disabled=true;finish(c,$('ans').value.trim())};
+function finish(c,given){
+ if(locked)return;locked=true;clearInterval(tTick);
+ const sec=(Date.now()-t0)/1000;const q=list[i];
+ let pts=0;
+ if(c){streak++;right++;pts=100+Math.max(0,Math.round((LIM-sec)*4))+(streak>=3?30:0);score+=pts;sOk();flash('g');
+  $('fb').style.color='var(--ok)';$('fb').textContent='✔ عالی! +'+fa(pts)+(streak>=3?' (پاداش پشت‌سرهم 🔥)':'')}
+ else{streak=0;sBad();flash('r');$('fb').style.color='var(--bad)';
+  const right_=q.k==='m'?q.o[q.a]:q.a[0];$('fb').textContent=(given==='—'?'⏰ وقت تمام شد! ':'✘ نادرست. ')+'پاسخ درست: '+right_}
+ $('hs').textContent=fa(score);$('hst').textContent=fa(streak);
+ log.push({q:q.q,c,sec});
+ $('nx').style.display='block';$('nx').textContent=i+1<list.length?'سؤال بعد ◀':'مشاهده‌ی نتیجه ◀';
+}
+$('nx').onclick=()=>{i++;if(i<list.length)ask();else end()};
+function end(){
+ const tot=(Date.now()-startAll)/1000;
+ const pct=right/list.length;
+ const rank=pct>=.9?'🏆 فرمانده‌ی ارشد':pct>=.7?'🥇 ستوان ماهر':pct>=.5?'🥈 سرباز حرفه‌ای':'🥉 سرباز تازه‌کار';
+ $('rk').textContent=rank;$('who').textContent=name;$('fs').textContent=fa(score)+' امتیاز';
+ $('rc').textContent=fa(right)+' از '+fa(list.length);$('tt').textContent=fmt(tot);$('av').textContent=fa((tot/list.length).toFixed(1))+' ثانیه';
+ let h='<tr><th>#</th><th>سؤال</th><th>نتیجه</th><th>زمان</th></tr>';
+ log.forEach((l,j)=>{h+='<tr><td>'+fa(j+1)+'</td><td>'+l.q.slice(0,40)+(l.q.length>40?'…':'')+'</td><td>'+(l.c?'✔':'✘')+'</td><td>'+fa(l.sec.toFixed(1))+' ث</td></tr>'});
+ $('tbl').innerHTML=h;show(2);sOk();
+}
+document.addEventListener('mousemove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;document.querySelectorAll('.card').forEach(c=>{c.style.setProperty('--ry',(x*8)+'deg');c.style.setProperty('--rx',(2-y*6)+'deg')})});
+</script>
+</body>
+</html>
